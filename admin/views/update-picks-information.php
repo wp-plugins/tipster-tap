@@ -6,9 +6,9 @@
  * The User Interface to the end user.
  *
  * @package   Tipster_TAP
- * @author    Alain Sanchez <asanchezg@inetzwerk.com>
+ * @author    Alain Sanchez <luka.ghost@gmail.com>
  * @license   GPL-2.0+
- * @link      http://www.inetzwerk.com
+ * @link      http://www.linkedin.com/in/mrbrazzi/
  * @copyright 2014 Alain Sanchez
  */
 ?>
@@ -81,6 +81,8 @@ if(isset($_POST['update']) && isset($_POST['tipster'])){
 
         $resultado = get_post_meta($p->ID, 'resultado', true);
         update_post_meta($p->ID, '_pick_resultado', strtolower($resultado));
+
+        $wpdb->update('statistics', array('user_id' => $tipster_id), array('user_id' => $autor), '%d', '%d');
     }
 
     add_settings_error('upgrade-picks-information', 'form-upgrade-picks-information', __('Actualizacion realizada satisfactoriamente', Tipster_TAP::get_instance()->get_plugin_slug()), 'updated');
