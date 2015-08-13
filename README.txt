@@ -3,7 +3,7 @@ Contributors: mrbrazzi, todoapuestas
 Donate link: http://todoapuestas.org/
 Tags: tipster, picks
 Requires at least: 3.5.1
-Tested up to: 4.1.1
+Tested up to: 4.2.2
 Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -53,6 +53,9 @@ Nothing for now
 
 == Changelog ==
 
+= 2.1.0 =
+* Added support for TAP Api REST's services through OAuth authentication/authorization
+
 = 2.0.1 =
 * Fixed a bug detected in update picks information process
 
@@ -88,7 +91,7 @@ Nothing for now
 
 == Upgrade Notice ==
 
-Upgrade to lastest version 1.1.x as soon as posible. See Changelog section for details
+Upgrade to lastest version 2.1.x as soon as posible. See Changelog section for details
 
 
 == Arbitrary section ==
